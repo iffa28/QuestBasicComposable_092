@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -20,6 +21,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.project2kotlin.ui.theme.Project2KotlinTheme
 
@@ -87,6 +89,12 @@ fun BasicCompose(modifier: Modifier = Modifier){
                 fontWeight = FontWeight.Bold,
                 color = Color(0xFF6A9AB0),
             ),
+        )
+
+        Image(painter = painterResource(id =R.drawable.iffa),
+            contentDescription = null,
+            modifier = Modifier
+                .size(400.dp) // Mengatur ukuran gambar menjadi 150dp x 150dp)
         )
 
     }
