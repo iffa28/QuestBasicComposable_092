@@ -45,7 +45,11 @@ fun BasicCompose(modifier: Modifier = Modifier){
         modifier = Modifier.fillMaxSize())
     {
         Text(text = "Indonesia",
-
+            style = TextStyle(
+                fontSize = 58.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Magenta
+            )
         )
     }
 
