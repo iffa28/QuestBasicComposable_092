@@ -32,7 +32,6 @@ class MainActivity : ComponentActivity() {
         setContent{
             Project2KotlinTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-
                     BasicCompose(modifier = Modifier.padding(innerPadding))
                 }
         }
@@ -52,7 +51,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
             style = TextStyle(
                 fontSize = 30.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Magenta
+                color = Color(0xFF5B99C2),
             ),
         )
 
@@ -98,7 +97,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
         Image(painter = painterResource(id =R.drawable.iffa),
             contentDescription = null,
             modifier = Modifier
-                .size(400.dp) // Mengatur ukuran gambar menjadi 150dp x 150dp)
+                .size(400.dp)
                 .padding(top = 16.dp)
         )
 
