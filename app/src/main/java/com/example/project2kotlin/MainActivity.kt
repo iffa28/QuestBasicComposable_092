@@ -14,6 +14,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.project2kotlin.ui.theme.Project2KotlinTheme
 
 class MainActivity : ComponentActivity() {
-    
+
 }
 
