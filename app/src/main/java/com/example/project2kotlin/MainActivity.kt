@@ -69,7 +69,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
             style = TextStyle(
                 fontSize = 25.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color.Black,
+                color = Color(0xFF001F3F),
             ),
         )
 
@@ -77,7 +77,15 @@ fun BasicCompose(modifier: Modifier = Modifier){
             style = TextStyle(
                 fontSize = 30.sp,
                 fontWeight = FontWeight.Bold,
-                color = Color(0xFF54473F),
+                color = Color(0xFF3A6D8C),
+            ),
+        )
+
+        Text(text = "20220140092",
+            style = TextStyle(
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF6A9AB0),
             ),
         )
 
