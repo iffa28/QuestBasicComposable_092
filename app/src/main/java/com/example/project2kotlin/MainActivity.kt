@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
             Project2KotlinTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
 
-
+                    BasicCompose(modifier = Modifier.padding(innerPadding))
                 }
         }
     }
@@ -48,7 +48,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
     {
         Text(text = "Indonesia",
             style = TextStyle(
-                fontSize = 58.sp,
+                fontSize = 40.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Magenta
             ),
@@ -64,6 +64,22 @@ fun BasicCompose(modifier: Modifier = Modifier){
 
         Image(painter = painterResource(id =R.drawable.fifa),
             contentDescription = null ) //atau ""
+
+        Text(text = "Nama:",
+            style = TextStyle(
+                fontSize = 25.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black,
+            ),
+        )
+
+        Text(text = "Iffatuz Zahra",
+            style = TextStyle(
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color(0xFF54473F),
+            ),
+        )
 
     }
 
