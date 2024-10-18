@@ -50,7 +50,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
     {
         Text(text = "Indonesia",
             style = TextStyle(
-                fontSize = 40.sp,
+                fontSize = 30.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Magenta
             ),
@@ -65,11 +65,15 @@ fun BasicCompose(modifier: Modifier = Modifier){
         )
 
         Image(painter = painterResource(id =R.drawable.fifa),
-            contentDescription = null ) //atau ""
+            contentDescription = null,
+            modifier = Modifier
+                .size(200.dp)
+
+        ) //atau ""
 
         Text(text = "Nama:",
             style = TextStyle(
-                fontSize = 25.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color(0xFF001F3F),
             ),
@@ -77,7 +81,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
 
         Text(text = "Iffatuz Zahra",
             style = TextStyle(
-                fontSize = 30.sp,
+                fontSize = 25.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color(0xFF3A6D8C),
             ),
@@ -85,7 +89,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
 
         Text(text = "20220140092",
             style = TextStyle(
-                fontSize = 30.sp,
+                fontSize = 25.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color(0xFF6A9AB0),
             ),
@@ -95,6 +99,7 @@ fun BasicCompose(modifier: Modifier = Modifier){
             contentDescription = null,
             modifier = Modifier
                 .size(400.dp) // Mengatur ukuran gambar menjadi 150dp x 150dp)
+                .padding(top = 16.dp)
         )
 
     }
