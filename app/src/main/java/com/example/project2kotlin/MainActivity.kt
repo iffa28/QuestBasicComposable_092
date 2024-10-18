@@ -16,6 +16,14 @@ import com.example.project2kotlin.ui.theme.Project2KotlinTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent{
+            Project2KotlinTheme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+
+
+                }
+        }
     }
 }
 
