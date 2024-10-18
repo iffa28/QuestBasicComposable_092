@@ -49,7 +49,16 @@ fun BasicCompose(modifier: Modifier = Modifier){
                 fontSize = 58.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Magenta
-            )
+            ),
+        )
+
+        Text(text = "0",
+            style = TextStyle(
+                fontSize = 25.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black,
+
+                ),
         )
     }
 
