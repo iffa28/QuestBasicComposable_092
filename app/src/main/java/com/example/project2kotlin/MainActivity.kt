@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.ComposableInferredTarget
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.project2kotlin.ui.theme.Project2KotlinTheme
@@ -28,3 +29,6 @@ class MainActivity : ComponentActivity() {
 }
 
 @Preview(showBackground = true)
+
+@Composable
+
